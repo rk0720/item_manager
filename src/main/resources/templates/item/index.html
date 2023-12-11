@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{layout/base :: layout(~{::title}, ~{::link}, ~{::body/content()})}">
 <head>
     <meta charset="UTF-8">
     <!-- 商品一覧 -->
     <title>商品一覧表示</title>
+    <link rel="stylesheet" href="/css/item/default.css">
 </head>
 <body>
     <h1>商品一覧表示ページ</h1>
-    <div>
-        <!-- 新規登録ページにアクセスします -->
-        <a href="/item/toroku">新規登録</a>
-    </div>
     <table>
         <thead>
             <tr>
